@@ -1,12 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Desafio Pepsi | Landing Page</title>
+    <title>Pepsi Website</title>
 </head>
+
 <body>
-   <script src="js/scripts.js"></script>
+
+    <section class="sec">
+        <!-- MENU SUPERIOR -->
+        <header>
+            <a href="#"><img src="images/logo.png" class="logo"></a>
+            <div class="toggleMenu" onclick="ToggleMenu();"></div>
+            <ul class ="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletter</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <!-- CONTEUDO PRINCIPAL -->
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What<br><span>I like</span></h2>
+                <p>Pepsi brings you the taste you love with a refreshing twist. Enjoy the perfect blend of flavor and
+                    fizz in
+                    every sip.</p>
+                <a href="#">View All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/pepsi001.png" class="pepsi">
+            </div>
+        </div>
+        <!-- CONTEUDO INTERATIVO -->
+        <ul class="thumb">
+            <li><img src="images/pepsi001.png" onclick="imgSlider('images/pepsi001.png'); chanceBgColor('#0062BE')">
+            </li>
+            <li><img src="images/pepsi002.png" onclick="imgSlider('images/pepsi002.png'); chanceBgColor('#E60C2C')">
+            </li>
+            <li><img src="images/pepsi003.png" onclick="imgSlider('images/pepsi003.png'); chanceBgColor('#1E1E1E')">
+            </li>
+        </ul>
+        <!-- LINKS REDES SOCIAIS -->
+        <ul class="sci">
+            <li><a href="#"><img src="images/facebook.png"></a></li>
+            <li><a href="#"><img src="images/twitter.png"></a></li>
+            <li><a href="#"><img src="images/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script src="js/scripts.js"></script>
 </body>
+
 </html>
